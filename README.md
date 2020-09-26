@@ -1,2 +1,2 @@
 # DiscordToonBot
-Discord bot that edit images and toonifies them
+Discord bot that edits images and toonifies them
