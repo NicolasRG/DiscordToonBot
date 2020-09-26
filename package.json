@@ -1,0 +1,36 @@
+{
+  "name": "discordtoonbot",
+  "version": "1.0.0",
+  "description": "Bot that toonifies images in a discord server",
+  "main": "app.js",
+  "scripts": {
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node compiled/app.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon compiled/app.js\""
+  },
+  "dependencies": {
+    "@types/node": "^14.11.2",
+    "deepai": "^1.0.15",
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasRG/DiscordToonBot.git"
+  },
+  "keywords": [
+    "Discord",
+    "bot",
+    "toon"
+  ],
+  "author": "Nicolas Ramos Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasRG/DiscordToonBot/issues"
+  },
+  "homepage": "https://github.com/NicolasRG/DiscordToonBot#readme"
+}
