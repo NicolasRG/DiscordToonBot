@@ -1,11 +1,10 @@
 import  Discord from 'discord.js';
-import secrets from './secrets.json';
 
 const client = new Discord.Client();
 
 //deepai
 import  deepai from 'deepai'; 
-deepai.setApiKey(secrets.apiToken);
+deepai.setApiKey(process.env.openaiToken);
 
 //discord bot 
 client.on('message', message => {
@@ -37,7 +36,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(secrets.clientToken);
+client.login(process.env.discordClientToken);
 
 
 //Function to get image
